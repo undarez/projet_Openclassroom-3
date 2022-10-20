@@ -1,0 +1,18 @@
+@import'utils/vars';
+@import'typographie';
+@import'header.scss';
+@import'footer';
+@import'utils/responsives';
+
+*,*::after,*::before { margin :0; padding: 0; box-sizing: inherit;}
+
+body{
+    background: $color_background;
+}
+
+.main-content{
+    width: $taille_ecran;
+    margin: $margin-main_content;
+}
+
+

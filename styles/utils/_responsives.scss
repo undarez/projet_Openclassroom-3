@@ -1,0 +1,75 @@
+// debut media screen and (max-width:1400px) and (min-width:992px) header
+
+@media screen and (max-width:1400px) and (min-width:992px){
+    header{
+        form{
+    
+            i{
+                font-size: 30px;
+                top: 18px;
+                left:-5px;
+            }
+            input{
+                height: 30px;
+                font-size: 40px;
+                
+            }
+        }
+    }
+}
+
+// header
+@media screen and (max-width:991px) and (min-width:768px){
+    header{
+
+        .container__header{
+            .--title{
+                font-size: 50px;
+            }
+        }
+
+        form{
+    
+            i{
+                font-size: 40px;
+                top: 20px;
+                left:-5px;
+            }
+            input{
+                height: 40px;
+                width: 25%;
+                font-size: 50px;
+                
+            }
+        }
+    }
+
+}
+
+// header
+@media screen and (max-width:767px) and (min-width:319px){
+    header{
+
+        .container__header{
+            .--title{
+                font-size: 65px;
+            }
+        }
+
+        form{
+    
+            i{
+                font-size: 50px;
+                top: 20px;
+                left:-5px;
+            }
+            input{
+                height: 47px;
+                width: 29%;
+                font-size: 57px;
+                
+            }
+        }
+    }
+
+}
