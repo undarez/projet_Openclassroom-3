@@ -3,7 +3,6 @@ header {
     height: 100%;
 
     .container__header {
-        width: 100%;
         height: auto;
         border: 2px solid #0000002c;
         box-shadow: 7px 7px 5px -2px rgba(0,0,0,0.72);
@@ -14,38 +13,46 @@ header {
             font-family: $police_logo-titre;
         }
     }
-    
-    form{
-        display: flex;
-        justify-content: center;
-        padding:20px 0;
-        
-        i{
-            position: relative;
-            top: 23px;
-            left:60px;
-        }
-        
-        
-        input{
-            width: 20%;
-            height: 25px;
-            text-align: center;
-            border: 1px none #000000;
-            border-radius: 10px 10px 10px 10px;
-            background: transparent;
-            font-family: $police_texte;
-            font-size: 20px;
-            margin-top: 20px;
+
+    .__container-form{
+        width: 100%;
+        margin-top: 10px;
+
+
+        form{
+            display: flex;
+            justify-content: center;
+            padding:20px 0;
+            background: $color_background;
             
-            &:hover{
-                color: $color_black;
-                text-shadow: 3px 3px 3px rgba(0,0,0,0.66);
-                
+            i{
+                position: relative;
+                top: 23px;
+                left:60px;
             }
+            
+            
+            input{
+                width: 20%;
+                height: 25px;
+                text-align: center;
+                border: 1px none #000000;
+                border-radius: 10px 10px 10px 10px;
+                background: transparent;
+                font-family: $police_texte;
+                font-size: 20px;
+                margin-top: 20px;
+                
+                &:hover{
+                    color: $color_black;
+                    text-shadow: 3px 3px 3px rgba(0,0,0,0.66);
+                    
+                }
+            }
+            
         }
-        
     }
+    
     
     
 }

@@ -1,0 +1,32 @@
+.__container-button {
+    position: relative;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin-top: 1%;
+
+    .--restaurant {
+        outline: none;
+        border: none;
+        color: $color_white;
+        box-shadow: 1px 8px 5px 0px rgba(0,0,20,0.55);
+        font-family: $police_texte;
+        font-size: 20px;
+        font-weight: 400;
+        align-items: center;
+        cursor: pointer;
+        // justify-content: center;
+        width: 20%;
+        border-radius: 80px 80px 80px 80px;
+        background: linear-gradient(135deg, #FF79DA 0%, #1C6EA4 250%, #9356DC 100%);
+    }
+
+    .--restaurant:active{
+        position: relative;
+        top: 8px;
+        box-shadow: 1px 0px 5px 0px rgba(0,0,20,0.55);
+
+    }    
+    
+
+}

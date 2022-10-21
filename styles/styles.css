@@ -1,23 +1,8 @@
-*, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-body {
-  background: #dadada;
-}
-
-.main-content {
-  width: 1400px;
-  margin: 0 auto;
-}
 header {
   width: 100%;
   height: 100%;
 }
 header .container__header {
-  width: 100%;
   height: auto;
   border: 2px solid rgba(0, 0, 0, 0.1725490196);
   box-shadow: 7px 7px 5px -2px rgba(0, 0, 0, 0.72);
@@ -28,30 +13,99 @@ header .container__header .--title {
   text-align: center;
   font-family: "Shrikhand", cursive;
 }
-header form {
+header .__container-form {
+  width: 100%;
+  margin-top: 10px;
+}
+header .__container-form form {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  background: #dadada;
 }
-header form i {
+header .__container-form form i {
   position: relative;
   top: 23px;
   left: 60px;
 }
-header form input {
+header .__container-form form input {
   width: 20%;
   height: 25px;
   text-align: center;
   border: 1px none #000000;
   border-radius: 10px 10px 10px 10px;
   background: transparent;
-  font-family: font-family "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin-top: 20px;
 }
-header form input:hover {
+header .__container-form form input:hover {
   color: #000;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 25px 0;
+}
+main .__container-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+main .__container-main .--reserver {
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  top: 5%;
+}
+main .__container-main-p {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+main .__container-main-p .--decouvrez {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000;
+  width: 45%;
+}
+
+.__container-button {
+  position: relative;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-top: 1%;
+}
+.__container-button .--restaurant {
+  outline: none;
+  border: none;
+  color: #fff;
+  box-shadow: 1px 8px 5px 0px rgba(0, 0, 20, 0.55);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  align-items: center;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 80px 80px 80px 80px;
+  background: linear-gradient(135deg, #FF79DA 0%, #1C6EA4 250%, #9356DC 100%);
+}
+.__container-button .--restaurant:active {
+  position: relative;
+  top: 8px;
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 20, 0.55);
 }
 
 @media screen and (max-width: 1400px) and (min-width: 992px) {
@@ -94,6 +148,22 @@ header form input:hover {
     width: 29%;
     font-size: 57px;
   }
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #dadada;
+  display: block;
+  position: relative;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

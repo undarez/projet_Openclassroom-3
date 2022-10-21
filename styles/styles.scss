@@ -1,6 +1,8 @@
 @import'utils/vars';
 @import'typographie';
 @import'header.scss';
+@import'page-acceuil';
+@import'button';
 @import'footer';
 @import'utils/responsives';
 
@@ -8,11 +10,15 @@
 
 body{
     background: $color_background;
+    display: block;
+    position: relative;
+
 }
 
 .main-content{
-    width: $taille_ecran;
+    max-width: $taille_ecran;
     margin: $margin-main_content;
 }
+
 
 
