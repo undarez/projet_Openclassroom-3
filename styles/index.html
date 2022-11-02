@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/sass/styles/styles.css">
+    <!-- link vers page-menu-1 -->
+
     <!-- police roboto= texte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,16 +36,13 @@
 
                 </form>
             </div>
-
-
-
         </header>
         <!-- fin header -->
 
         <!-- debut page-acceuil -->
         <main>
             <div class="__container-main">
-                <h2 class="--reserver">Réservez le menu qui <br> vous convient</h2>
+                <h2 class="--title-2">Réservez le menu qui <br> vous convient</h2>
                 <div class="__container-main-p">
                     <p class="--decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
@@ -53,20 +52,161 @@
                     </button>
                 </div>
             </div>
-            <!-- <div class="__container-button">
-                <button class="--restaurant">
-                    <div class="__container-button-input">
-                        <input type="text" placeholder="Explorer nos restaurants">
 
+        </main>
 
+        <!-- fin page acceuil -->
+
+        <!-- debut selection -->
+        <section class="__container-selection-button">
+            <h2 class="--title-2">Fonctionnement</h2>
+
+            <div class="__container-button">
+                <button type="button" class="--restaurant">
+                    <span class="--bulle">1</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Choisissez un restaurant
+                </button>
+            </div>
+            <div class="__container-button">
+                <button type="--button" class="--restaurant">
+                    <span class="--bulle">2</span>
+                    <i class="fa-solid fa-list-ul"></i>
+                    Composez votre menu
+                </button>
+            </div>
+            <div class="__container-button">
+                <button type="button" class="--restaurant">
+                    <span class="--bulle">3</span>
+                    <i class="fa-solid fa-store"></i>
+                    Dégustez au restaurant
+                </button>
+            </div>
+
+        </section>
+
+        <section class="__container-vignette-menu">
+            <h2 class="--title-2 --margin-title-2">restaurants</h2>
+            <div class="__container-grid-card">
+                <div class="__container-card --card-1">
+                    <div class="--container-nouveau">
+                        <span class="--vignette-new">Nouveau</span>
+                    </div>
+                    <a href="menu-france-1.html">
+                        <div class="--img-content">
+                            <img src="/sass/styles/images/jay-wennington-restaurant-1.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="--desc">
+                        <div>
+                            <h2 class="--title-2">La palette du goût</h2>
+                            <p class="--decouvrez">Ménilmontant</p>
+                        </div>
+                        <div class="--desc-icons">
+                            <input type="checkbox">
+                            <!-- fa-solid = coeur plein-->
+                            <i class="plein fa-solid fa-heart"></i>
+                            <!-- fa-regular = coeur vide-->
+                            <i class="vide fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__container-card --card-2">
+                    <div class="--container-nouveau">
+                        <span class="--vignette-new">Nouveau</span>
+                    </div>
+                    <a href="#">
+                        <div class="--img-content">
+                            <img src="/sass/styles/images/louis-hansel-shotsoflouis-restaurant-2.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="--desc">
+                        <div class="--desc-container">
+                            <div>
+                                <h2 class="--title-2">La note enchantée</h2>
+                                <p class="--decouvrez">Charonne</p>
+                            </div>
+                            <div>
+                                <!-- fa-regular = coeur vide-->
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- fa-solid = coeur plein-->
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="__container-card --card-3">
+                    <a href="#">
+                        <div class="--img-content --taille-img-content-3">
+                            <img src="/sass/styles/images/stil-restaurant-3.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="--desc">
+                        <div class="--desc-container">
+                            <div>
+                                <h2 class="--title-2">À la française</h2>
+                                <p class="--decouvrez">Cité Rouge</p>
+                            </div>
+                            <div>
+                                <!-- fa-regular = coeur vide-->
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- fa-solid = coeur plein-->
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="__container-card --card-4">
+                    <a href="#">
+                        <div class="--img-content">
+                            <img src="/sass/styles/images/toa-heftiba-restaurant-4.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="--desc">
+                        <div class="--desc-container">
+                            <div>
+                                <h2 class="--title-2">Le délice des sens</h2>
+                                <p class="--decouvrez">Folie-Méricourt</p>
+                            </div>
+                            <div>
+                                <!-- fa-regular = coeur vide-->
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- fa-solid = coeur plein-->
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
 
                     </div>
+                </div>
+            </div>
+        </section>
 
-                </button>
+        <footer>
+            <div class="__container-footer">
+                <div class="--desc">
+                    <h2 class="--title">Ohmyfood</h2>
+                    <br>
+                    <i class="fa-solid fa-utensils"></i><span class="--sous-desc">Proposer un restaurant</span>
+                    <br>
+                    <br>
+                    <span class="--sous-desc-2">Devenir partenaire</span>
+                    <br>
+                    <i class="fa-solid fa-handshake"></i>
+                    <br>
+                    <span class="--sous-desc-3">Mentions légales</span>
+                    <br>
+                    <br>
+                    <a href="mailto:test@test.com" class="--sous-desc-4">Contact</a>
 
-            </div> -->
-        </main>
+                </div>
+
+
+            </div>
+
     </div>
+    </footer>
 
     <!-- appel font awasome  -->
     <script src="https://kit.fontawesome.com/1eba15efc9.js" crossorigin="anonymous"></script>

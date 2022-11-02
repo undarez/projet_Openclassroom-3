@@ -11,37 +11,43 @@ header {
             padding: 20px 0;
             text-align: center;
             font-family: $police_logo-titre;
+            font-size: 50px;
         }
     }
 
     .__container-form{
         width: 100%;
         margin-top: 10px;
-
-
+        
+        
         form{
             display: flex;
+            align-items: center;
             justify-content: center;
             padding:20px 0;
+            height: 100%;
             background: $color_background;
             
             i{
-                position: relative;
+                // position: relative;
+                font-size: 35px;
                 top: 23px;
                 left:60px;
             }
             
             
             input{
-                width: 20%;
+                
+                width: max-content;
+                padding: 15px;
                 height: 25px;
                 text-align: center;
                 border: 1px none #000000;
                 border-radius: 10px 10px 10px 10px;
                 background: transparent;
                 font-family: $police_texte;
-                font-size: 20px;
-                margin-top: 20px;
+                font-size: 30px;
+                
                 
                 &:hover{
                     color: $color_black;

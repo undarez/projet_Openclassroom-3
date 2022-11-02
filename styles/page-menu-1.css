@@ -451,4 +451,138 @@ body {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=styles.css.map */
+header {
+  width: 100%;
+  height: 100%;
+}
+header .container__header {
+  height: auto;
+  border: 2px solid rgba(0, 0, 0, 0.1725490196);
+  box-shadow: 7px 7px 5px -2px rgba(0, 0, 0, 0.72);
+  background: #fff;
+}
+header .container__header .--title {
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+}
+header .__container-form {
+  width: 100%;
+  margin-top: 10px;
+}
+header .__container-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  height: 100%;
+  background: #dadada;
+}
+header .__container-form form i {
+  font-size: 35px;
+  top: 23px;
+  left: 60px;
+}
+header .__container-form form input {
+  width: max-content;
+  padding: 15px;
+  height: 25px;
+  text-align: center;
+  border: 1px none #000000;
+  border-radius: 10px 10px 10px 10px;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+header .__container-form form input:hover {
+  color: #000;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+}
+footer .__container-footer {
+  height: auto;
+  background: #7e7e7e;
+}
+footer .--title {
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+}
+footer .--sous-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 20px;
+}
+footer .fa-utensils {
+  padding-left: 60px;
+  font-size: 25px;
+  color: #fff;
+}
+footer .fa-handshake {
+  padding-left: 65px;
+  font-size: 25px;
+  transform: rotate(-45deg);
+  margin-top: -5px;
+  color: #fff;
+}
+footer .--sous-desc-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 100px;
+}
+footer .--sous-desc-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 60px;
+}
+footer .--sous-desc-4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 60px;
+  list-style: none;
+}
+
+.main-content {
+  background-image: url(/sass/styles/images/jay-wennington-restaurant-1.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 500px;
+  width: 100%;
+}
+.main-content .container-main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  margin-top: -40px;
+}
+.main-content .container-main .--title {
+  text-align: center;
+  font-size: 27px;
+  padding-left: 20px;
+  font-family: "Shrikhand", cursive;
+}
+.main-content .container-main .vide {
+  padding-top: 7px;
+  padding-left: 40px;
+  font-size: 25px;
+  color: #000;
+}
+
+/*# sourceMappingURL=page-menu-1.css.map */
