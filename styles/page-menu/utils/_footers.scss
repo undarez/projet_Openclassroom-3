@@ -1,0 +1,66 @@
+footer {
+    width: 100%;
+    height: 100%;
+
+    .__container-footer {
+        height: auto;
+        background: $color_grey-p;
+    }
+
+    .--title{
+        font-size: 50px;
+        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-top: 30px;
+        font-family: $police_logo-titre;
+        color: $color_white;
+    }
+
+    .--sous-desc{
+        font-family: $police_texte;
+        font-size: 25px;
+        font-weight: 600;
+        color: $color_white;
+        padding-left: 20px;
+        
+    }
+
+    .fa-utensils{
+        padding-left: 60px;
+        font-size: 25px;
+        color: $color_white;
+    }
+
+    .fa-handshake{
+        padding-left: 65px;
+        font-size: 25px;
+        transform: rotate(-45deg);
+        margin-top: -5px;
+        color: $color_white;
+    }
+
+    .--sous-desc-2{
+        font-family: $police_texte;
+        font-size: 25px;
+        font-weight: 600;
+        color: $color_white;
+        padding-left: 100px;
+    }
+
+    .--sous-desc-3{
+        font-family: $police_texte;
+        font-size: 25px;
+        font-weight: 600;
+        color: $color_white;
+        padding-left: 60px;
+    }
+
+    .--sous-desc-4{
+        font-family: $police_texte;
+        font-size: 25px;
+        font-weight: 600;
+        color: $color_white;
+        padding-left: 60px;
+        list-style: none;
+    }
+}

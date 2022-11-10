@@ -1,0 +1,210 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #dadada;
+  display: block;
+  position: relative;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+}
+header .__container-header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+header .__container-header .--titre-fleche {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+}
+header .__container-header .--titre-fleche a {
+  position: absolute;
+  left: 10px;
+}
+header .__container-header .--titre-fleche .--fleche-retour {
+  color: #000;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+}
+footer .__container-footer {
+  height: auto;
+  background: #7e7e7e;
+}
+footer .--title {
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+}
+footer .--sous-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 20px;
+}
+footer .fa-utensils {
+  padding-left: 60px;
+  font-size: 25px;
+  color: #fff;
+}
+footer .fa-handshake {
+  padding-left: 65px;
+  font-size: 25px;
+  transform: rotate(-45deg);
+  margin-top: -5px;
+  color: #fff;
+}
+footer .--sous-desc-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 100px;
+}
+footer .--sous-desc-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 60px;
+}
+footer .--sous-desc-4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 60px;
+  list-style: none;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.__background-image {
+  width: 100%;
+  height: 500px;
+  background-image: url(/sass/styles/images/jay-wennington-restaurant-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+}
+main .__header-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+main .--title {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  width: 100%;
+}
+main .__coeur {
+  position: relative;
+  width: 3%;
+  height: 100%;
+}
+main .__coeur i {
+  position: absolute;
+  font-size: 22px;
+  margin-top: -10px;
+}
+main .__coeur .fas {
+  cursor: pointer;
+  position: absolute;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC 0%, #FF79DA 53%, #9356DC 100%);
+  opacity: 0;
+  z-index: 0;
+  transition: 600ms;
+}
+main .__coeur .far {
+  position: absolute;
+  z-index: -1;
+  padding-right: -10px;
+}
+main .__coeur .far:hover {
+  opacity: 0;
+  z-index: -1;
+}
+main .__coeur .fas:hover {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+main .--text-menu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+main .--text-menu .--text {
+  font-family: "Roboto", sans-serif;
+  color: #7e7e7e;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 50px;
+}
+main .__menu-container {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+main .__menu-container .__grid-menu {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main .__menu-container .--card-entree {
+  display: flex;
+  flex-direction: row;
+  max-height: 250px;
+  max-width: 200px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+  transition: all 0.36s;
+}
+
+/*# sourceMappingURL=menu-1.css.map */

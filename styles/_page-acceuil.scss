@@ -50,14 +50,14 @@ main {
     gap: 30px;
     flex-direction: column;
     align-items: center;
-    
+
     .--title-2 {
         font-family: $police_texte;
         font-weight: 700;
         font-size: 50px;
     }
-    
-    .--container-nouveau{
+
+    .--container-nouveau {
         position: absolute;
         right: 15px;
         top: 15px;
@@ -67,14 +67,15 @@ main {
         padding: 5px 8px;
         background: $color_tertiare;
 
-        .--vignette-new{
+        .--vignette-new {
             color: $color-text-new;
             font-family: $police_texte;
             font-size: 15px;
             font-weight: 600;
         }
-        
+
     }
+
     .__container-card {
         position: relative;
         width: 300px;
@@ -84,127 +85,117 @@ main {
         background: $color_white;
         border-radius: 20px;
         transition: all 0.34s;
-        
-        
-        
+
+
+
         a {
             height: 100%;
         }
-        
+
         .--img-content img {
             width: 100%;
             height: 100%;
             border-radius: 20px 20px 0 0;
             object-fit: cover;
         }
+
         // taille de l'image 3 car photo en transversale donc trop grand par rapport aux autres.
-        .--taille-img-content-3 img{
+        .--taille-img-content-3 img {
             height: 207px
         }
-        
-        .--desc{
+
+        .--desc {
             position: relative;
             width: 100%;
-                display:flex;
-                // height: 100%;
-                align-items: center;
-                justify-content: space-between;
-                
-                .--title-2{
-                    font-size: 25px;
-                    padding: 5px 0;
-                    text-align: left;
-                }
-                
-                .--decouvrez{
-                    font-family: $police_texte;
-                    font-size: 20px;
-                    font-weight: 500;
-                    text-align: left;
-                    color: $color_grey-p;
-                }
-                
-                
+            display: flex;
+            // height: 100%;
+            align-items: center;
 
-                .--desc-icons{
-                    position: relative;
-                }
+            .--title-2 {
+                font-size: 25px;
+                padding: 5px 0;
+                text-align: left;
+            }
 
-                .--desc-icons input{
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    opacity: 0;
-                    z-index: 10;
-                    // transform: translateY(-50%);
-                    font-size: 22px;
-                    cursor: pointer;
-                }
+            .--decouvrez {
+                font-family: $police_texte;
+                font-size: 20px;
+                font-weight: 500;
+                text-align: left;
+                color: $color_grey-p;
+            }
 
-                .vide{
-                    color: $color_black;
-                }
-// plein = icons transparent mais toujours la 
-                .plein{
-                    position: absolute;
-                    color:transparent;
-                    visibility: hidden;
-                    transition: all 2s ease-in-out;
-                }
-                // cheked = cocher quand il es cocher la class plein vien derriere pour etre afficher
-                .--desc-icons input:checked + .plein{
-                    visibility: visible;
-                    background: linear-gradient(to right, #9356DC 0%, #FF79DA 89%, #FF79DA 100%);
-                    background-clip: text;
-                }
-
-                // .--desc-container i.fa-solid{
-                //     transition: color 1s ease-in;
-                // }
-
-                // .--desc-container i.fa-solid:hover{
-                //     color: linear-gradient(to right, #9356DC 0%, #FF79DA 89%, #FF79DA 100%);
-                // }
-
-
-                
-
-
-                
-
-
-                // .fa-regular{
-                //     position: absolute;
-                //     color: black;
-                //     transition: all 0.3s linear 0s;                  
-                // }
-
-                // .fa-solid{
-                //     background: linear-gradient(to right, #9356DC 0%, #FF79DA 89%, #FF79DA 100%);
-                //     position: relative;
-                //     transition: all 0.6s linear 0s;
-                // }
-
-                // .fa-solid:hover{
-                //     color: linear-gradient(to right, #9356DC 0%, #FF79DA 89%, #FF79DA 100%);
-                //     transition: all 1s linear 1s;
-                //     height: 100%;
-                // }
-
-
-
-                
+            .--desc-container{
+                width: 80%;
             }
             
             
+            .--desc-icons {
+                position: relative;
+            }
             
+            .--desc-icons input {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                z-index: 10;
+                // transform: translateY(-50%);
+                font-size: 22px;
+                cursor: pointer;
+            }
+            
+            
+            .mouvement-heart{
+                padding-left: 30px;
+            }
+            
+            .heart {
+                font-size: 22px;
+                
+            }
+            .heart .fas{
+                cursor: pointer;
+                position: absolute;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image:linear-gradient(to bottom, #9356DC 0%, #FF79DA 53%, #9356DC 100%); 
+                opacity: 0;
+                z-index: 0;
+                transition: 600ms;
+            }
+            
+            .heart .far{
+                position: absolute;
+                z-index: -1;
+                padding-right: -10px;
+            }
+            
+            .heart .far:hover {  
+                opacity: 0;
+                z-index: -1;
+              }
+              
+              .heart .fas:hover {  
+                opacity: 1;
+                transform: scale(1);
+                z-index: 1;  
+              }
         }
+
         
-        .__container-card:hover {
-            transform: scale(1.05);
-            box-shadow: 1px 8px 27px 2px rgba(0, 0, 0, 0.45);
-        }
+           
         
-       
-        
+
+
+    }
+
+    .__container-card:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 8px 27px 2px rgba(0, 0, 0, 0.45);
+    }
+
+
+
 }
