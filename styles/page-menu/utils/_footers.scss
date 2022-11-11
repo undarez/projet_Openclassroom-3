@@ -1,13 +1,10 @@
 footer {
     width: 100%;
-    height: 100%;
+    height: auto;
+    background: $color_background-footer;
 
-    .__container-footer {
-        height: auto;
-        background: $color_grey-p;
-    }
 
-    .--title{
+    .--title {
         font-size: 50px;
         letter-spacing: 1px;
         padding-left: 50px;
@@ -16,22 +13,22 @@ footer {
         color: $color_white;
     }
 
-    .--sous-desc{
+    .--sous-desc {
         font-family: $police_texte;
         font-size: 25px;
         font-weight: 600;
         color: $color_white;
         padding-left: 20px;
-        
+
     }
 
-    .fa-utensils{
+    .fa-utensils {
         padding-left: 60px;
         font-size: 25px;
         color: $color_white;
     }
 
-    .fa-handshake{
+    .fa-handshake {
         padding-left: 65px;
         font-size: 25px;
         transform: rotate(-45deg);
@@ -39,7 +36,7 @@ footer {
         color: $color_white;
     }
 
-    .--sous-desc-2{
+    .--sous-desc-2 {
         font-family: $police_texte;
         font-size: 25px;
         font-weight: 600;
@@ -47,7 +44,7 @@ footer {
         padding-left: 100px;
     }
 
-    .--sous-desc-3{
+    .--sous-desc-3 {
         font-family: $police_texte;
         font-size: 25px;
         font-weight: 600;
@@ -55,12 +52,13 @@ footer {
         padding-left: 60px;
     }
 
-    .--sous-desc-4{
+    .--sous-desc-4 {
         font-family: $police_texte;
         font-size: 25px;
         font-weight: 600;
         color: $color_white;
         padding-left: 60px;
         list-style: none;
+        text-decoration: none;
     }
 }

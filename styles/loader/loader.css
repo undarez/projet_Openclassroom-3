@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #dadada;
+  display: block;
+  position: relative;
+}
+
+.main-content {
+  max-width: 1400px;
+  height: 1884px;
+  margin: 0 auto;
+}
+.main-content .__container-loader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #99E2D0 0%, #9356DC 50%, #FF79DA 100%);
+  width: 100%;
+}
+.main-content .__container-loader .container-table-text {
+  display: flex;
+  align-items: center;
+}
+.main-content .-- .--table {
+  height: 100%;
+  width: 100%;
+}
+.main-content .-- .--table img {
+  width: 150px;
+  height: 400px;
+}
+
+/*# sourceMappingURL=loader.css.map */

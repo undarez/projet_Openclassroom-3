@@ -3,7 +3,7 @@
 @import 'utils/styles';
 @import 'utils/headers';
 @import 'utils/footers';
-
+@import 'utils/responsive-menu-1.scss';
 
 
 
@@ -25,7 +25,9 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: $color_white;
+    background: $color_background-grey;
+    border-radius: 20px 20px 0 0;
+    margin-top: -20px;
 
     .__header-main {
         display: flex;
@@ -66,7 +68,7 @@ main {
 
     .__coeur .far {
         position: absolute;
-        z-index: -1;
+        z-index:-1;
         padding-right: -10px;
     }
 
@@ -83,9 +85,43 @@ main {
 
     .--text-menu {
         display: flex;
-        width: 100%;
+        width: 97%;
         justify-content: flex-start;
         padding-top: 20px;
+
+        .--text {
+            font-family: $police_texte;
+            color: $color_grey-p;
+            font-weight: 400;
+            border-bottom: 3px solid #99e2d0;
+            width: 50px;
+
+        }
+    }
+
+    .--text-menu-2{
+        display:flex;
+        width: 74%;
+        justify-content: flex-start;
+        padding: 10px;
+        padding-left: 45px;
+
+        .--text {
+            font-family: $police_texte;
+            color: $color_grey-p;
+            font-weight: 400;
+            border-bottom: 3px solid #99e2d0;
+            width: 50px;
+
+        }
+    }
+
+    .--text-menu-3{
+        display:flex;
+        width: 89%;
+        justify-content: flex-start;
+        padding: 10px;
+        padding-left: 15px;
 
         .--text {
             font-family: $police_texte;
@@ -105,8 +141,10 @@ main {
 
         .__grid-menu {
             display: flex;
+            flex-direction: column;
             height: auto;
             padding: 10px;
+            gap: 20px;
             // overflow cache la parti qui dépace le conteneur
 
             .--card-entree {
@@ -125,22 +163,18 @@ main {
                     padding: 10px;
                     width: 275px;
                 }
-
+// overflow permet de d'aligner le texte et d'insérer les pointiller pendant la transition.
                 .overflow {
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
 
-
                 .--desc {
                     font-family: $police_texte;
                     color: $color_black;
                     font-weight: 600;
-                    font-size: px;
                 }
-
-
 
                 .--text {
                     font-family: $police_texte;
@@ -156,6 +190,7 @@ main {
                     width: 100%;
                 }
 
+// __container-check permet de réaliser la transition de droite vers la gauche grace au margin-right -40% ainsi que la transition.
                 .__container-check {
                     display: flex;
                     width: 180px;
@@ -165,7 +200,7 @@ main {
                     transition: margin-right 0.5s ease-in-out;
                 }
 
-
+// --check est l'icon tous ce qui es stipuler sont les parametre de configuration ainsqi que le temps en ms du margin-right.
                 .--check {
                     display: flex;
                     align-items: center;
@@ -192,9 +227,13 @@ main {
             transition: all 0.36s;
         }
 
+// --card-entree:hover mert de réaliser la suite de la transition. 
+
         .--card-entree:hover .__container-check {
             margin-right: 0;
         }
+
+// --card-entree:hover .icon grace au transform rotate cela permet que l'icon réalise une rotation de 360° ainsi que le 1300ms permet de d'indiqué le temps pour réaliser la rotation.
 
         .--card-entree:hover .icon {
             transform: rotate(360deg);
