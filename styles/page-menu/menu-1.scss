@@ -4,10 +4,7 @@
 @import 'utils/headers';
 @import 'utils/footers';
 
-.main-content {
-    max-width: $taille_ecran;
-    margin: $margin-main_content;
-}
+
 
 
 
@@ -29,67 +26,68 @@ main {
     justify-content: center;
     flex-direction: column;
     background: $color_white;
-    
+
     .__header-main {
         display: flex;
         width: 100%;
         align-items: center;
     }
 
-    .--title{
+    .--title {
         text-align: center;
         font-family: $police_logo-titre;
         width: 100%;
     }
 
-    .__coeur{
+    .__coeur {
         position: relative;
         width: 3%;
         height: 100%;
-        i{
+
+        i {
             position: absolute;
             font-size: 22px;
             margin-top: -10px;
         }
 
     }
-    .__coeur .fas{
+
+    .__coeur .fas {
         cursor: pointer;
         position: absolute;
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image:linear-gradient(to bottom, #9356DC 0%, #FF79DA 53%, #9356DC 100%); 
+        background-image: linear-gradient(to bottom, #9356DC 0%, #FF79DA 53%, #9356DC 100%);
         opacity: 0;
         z-index: 0;
         transition: 600ms;
     }
 
-    .__coeur .far{
+    .__coeur .far {
         position: absolute;
         z-index: -1;
         padding-right: -10px;
     }
-    
-    .__coeur .far:hover {  
+
+    .__coeur .far:hover {
         opacity: 0;
         z-index: -1;
-      }
-      
-      .__coeur .fas:hover {  
-        opacity: 1;
-        transform: scale(1);
-        z-index: 1;  
     }
 
-    .--text-menu{
+    .__coeur .fas:hover {
+        opacity: 1;
+        transform: scale(1);
+        z-index: 1;
+    }
+
+    .--text-menu {
         display: flex;
         width: 100%;
         justify-content: flex-start;
-        padding-left: 30px;
         padding-top: 20px;
 
-        .--text{
+        .--text {
             font-family: $police_texte;
             color: $color_grey-p;
             font-weight: 400;
@@ -99,36 +97,114 @@ main {
         }
     }
 
-    .__menu-container{
+    .__menu-container {
         width: 100%;
         height: auto;
-        padding: 20px;
+        background: $color_background-grey;
 
-        .__grid-menu{
+
+        .__grid-menu {
             display: flex;
-            width: 100%;
             height: auto;
-            flex-direction: column;
-            justify-content: space-evenly;
-            
+            padding: 10px;
+            // overflow cache la parti qui dépace le conteneur
+
+            .--card-entree {
+                display: flex;
+                width: 296px;
+                height: 59px;
+                max-height: 250px;
+                max-width: 375px;
+                background: $color_white;
+                border-radius: 20px;
+                transition: all 0.36s;
+                overflow: hidden;
+                cursor: pointer;
+
+                .__typo {
+                    padding: 10px;
+                    width: 275px;
+                }
+
+                .overflow {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+
+                .--desc {
+                    font-family: $police_texte;
+                    color: $color_black;
+                    font-weight: 600;
+                    font-size: px;
+                }
+
+
+
+                .--text {
+                    font-family: $police_texte;
+                    color: $color_grey-p;
+                    font-weight: 400;
+                }
+
+                .--prix {
+                    font-family: $police_texte;
+                    font-weight: 600;
+                    color: $color_black;
+                    font-size: 16px;
+                    width: 100%;
+                }
+
+                .__container-check {
+                    display: flex;
+                    width: 180px;
+                    height: 59px;
+                    align-items: center;
+                    margin-right: -40%;
+                    transition: margin-right 0.5s ease-in-out;
+                }
+
+
+                .--check {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    color: $color_background-grey;
+                    background: $color_tertiare;
+                    // padding: 20px;
+                    border-radius: 0 20px 20px 0;
+                    // margin-right: -2.1rem;
+                    transition: margin-right 500ms;
+
+                }
+
+            }
+
         }
-    
-        .--card-entree{
-           display: flex;
-           flex-direction: row;
-           max-height: 250px;
-           max-width: 200px;
-           padding: 10px;
-           background: $color_white;
-           border-radius: 20px;
-           transition: all 0.36s;
+
+        // annimation card
+        .--card-entree:hover {
+            transform: scale(1.05);
+            box-shadow: 8px 8px 15px -3px rgba(0, 0, 0, 0.81);
+            transition: all 0.36s;
+        }
+
+        .--card-entree:hover .__container-check {
+            margin-right: 0;
+        }
+
+        .--card-entree:hover .icon {
+            transform: rotate(360deg);
+            transition: transform 1300ms;
         }
     }
 
 
 
 
-    
+
 
 }
-
