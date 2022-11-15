@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/sass/styles/styles.css">
+    <!-- link vers le loader  -->
+
     <!-- link vers page-menu-1 -->
 
     <!-- police roboto= texte -->
@@ -23,7 +25,22 @@
 </head>
 
 <body>
+
     <div class="main-content">
+        <div class="__overlay-loader">
+            <section class="__container-loader">
+                <div class="__container-table-text">
+                    <h2 class="--text">Ohmyfood chargement</h2>
+                </div>
+                <div class="--loader-placement">
+                    <a href="/sass/styles/index.html">
+                        <img src="/sass/styles/images/cocotte.png" class="cocotte" alt="">
+
+                    </a>
+                </div>
+            </section>
+
+        </div>
         <header>
             <div class="container__header">
                 <h1 class="--title">
@@ -32,7 +49,8 @@
             </div>
             <div class="__container-form">
                 <form>
-                    <i class=" localisation fa-solid fa-location-dot"></i><input type="text" placeholder="Paris, Belleville">
+                    <i class=" localisation fa-solid fa-location-dot"></i><input type="text"
+                        placeholder="Paris, Belleville">
 
                 </form>
             </div>
@@ -44,7 +62,8 @@
             <div class="__container-main">
                 <h2 class="--title-2">Réservez le menu qui <br> vous convient</h2>
                 <div class="__container-main-p">
-                    <p class="--decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <p class="--decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins.
+                    </p>
                 </div>
                 <div class="__container-button">
                     <button type="button" class="--restaurant">
@@ -94,7 +113,7 @@
                     </div>
                     <a href="/sass/styles/page-menu/pallette-du-gout.html">
                         <div class="--img-content">
-                            <img src="/sass/styles/images/jay-wennington-restaurant-1.jpg" alt="">
+                            <img src="/sass/styles/images/palette-du-gout-1.jpg" alt="">
                         </div>
                     </a>
                     <div class="--desc">
@@ -111,39 +130,39 @@
                     </div>
                 </div>
                 <!-- <br>
-                <br> -->
-
-                    <div class="__container-card --card-2" >
-                        <div class="--container-nouveau">
-                            <span class="--vignette-new">Nouveau</span>
-                        </div>
-                        <a href="#">
-                            <div class="--img-content">
-                                <img src="/sass/styles/images/louis-hansel-shotsoflouis-restaurant-2.jpg" alt="">
-                            </div>
-                        </a>
-                        <div class="--desc">
-                            <div class="--desc-container">
-                                <h2 class="--title-2">La note enchantée</h2>
-                                <p class="--decouvrez">Charonne</p>
-                            </div>
-
-                            <div class="--desc-icons">
-                                <div class="heart">
-                                    <i class="fas fa-heart"></i>
-                                    <i class="far fa-heart"></i>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <br>
                     <br> -->
 
+                <div class="__container-card --card-2">
+                    <div class="--container-nouveau">
+                        <span class="--vignette-new">Nouveau</span>
+                    </div>
+                    <a href="/sass/styles/page-menu/page-menu-2/la_note_enchantee.html">
+                        <div class="--img-content --taille-img-content-2">
+                            <img src="/sass/styles/images/la-note-enchante-2.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="--desc">
+                        <div class="--desc-container">
+                            <h2 class="--title-2">La note enchantée</h2>
+                            <p class="--decouvrez">Charonne</p>
+                        </div>
+
+                        <div class="--desc-icons">
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <br>
+                        <br> -->
+
                 <div class="__container-card --card-3">
-                    <a href="#">
+                    <a href="/sass/styles/page-menu-3/a-la-francaise.html">
                         <div class="--img-content --taille-img-content-3">
-                            <img src="/sass/styles/images/stil-restaurant-3.jpg" alt="">
+                            <img src="/sass/styles/images/a-la-francaise-3.jpg" alt="">
                         </div>
                     </a>
                     <div class="--desc">
@@ -161,12 +180,12 @@
 
                 </div>
                 <!-- <br>
-                <br> -->
+                            <br> -->
 
                 <div class="__container-card --card-4">
-                    <a href="#">
+                    <a href="/sass/styles/page-menu-4/le-delice-des-sens.html">
                         <div class="--img-content">
-                            <img src="/sass/styles/images/toa-heftiba-restaurant-4.jpg" alt="">
+                            <img src="/sass/styles/images/delice-des-sens-4.jpg" alt="">
                         </div>
                     </a>
                     <div class="--desc">
@@ -216,6 +235,7 @@
 
     <!-- appel font awasome  -->
     <script src="https://kit.fontawesome.com/1eba15efc9.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -6,32 +8,55 @@
 
 body {
   background: #dadada;
-  display: block;
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
-
-.main-content {
-  max-width: 1400px;
-  height: 975px;
-  margin: 0 auto;
+body .main-content .__overlay-loader {
+  position: absolute;
+  z-index: -50;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  animation: loading 3s;
+  animation-iteration-count: 1;
 }
-.main-content .__container-loader {
+@keyframes loading {
+  1% {
+    visibility: visible;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  99% {
+    visibility: visible;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+body .main-content .__overlay-loader .__container-loader {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   height: 100%;
   background: linear-gradient(45deg, #99E2D0 0%, #9356DC 50%, #FF79DA 100%);
-  width: 100%;
 }
-.main-content .__container-loader .__container-table-text {
+body .main-content .__overlay-loader .__container-loader .__container-table-text {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20%;
 }
-.main-content .__container-loader .__container-table-text .--text {
+body .main-content .__overlay-loader .__container-loader .__container-table-text .--text {
   animation: fade 3000ms ease-in-out infinite;
   color: transparent;
   -webkit-background-clip: text;
@@ -51,16 +76,17 @@ body {
     opacity: 0.2;
   }
 }
-.main-content .__container-loader .--loader-placement {
+body .main-content .__overlay-loader .__container-loader .--loader-placement {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.main-content .__container-loader .--loader-placement .cocotte {
+body .main-content .__overlay-loader .__container-loader .--loader-placement .cocotte {
   width: 800px;
   height: auto;
   animation: fade 3000ms ease-in-out infinite;
+  animation-duration: 2s;
 }
 @keyframes fade {
   0% {

@@ -1,24 +1,31 @@
 @import'utils/vars';
 @import'typographie';
+@import'loader/loader';
 @import'header.scss';
 @import'page-acceuil';
 @import'button';
 @import'footer';
 @import'utils/responsives';
 
-*,*::after,*::before { margin :0; padding: 0; box-sizing: inherit;}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
-body{
+body {
     background: $color_background;
     display: block;
     position: relative;
+    
 
 }
 
-.main-content{
+.main-content {
     max-width: $taille_ecran;
     margin: $margin-main_content;
 }
-
 
 

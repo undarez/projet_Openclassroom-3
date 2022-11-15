@@ -126,6 +126,56 @@
 
 }
 
+
+@media screen and (max-width:375px){
+    .container__header{
+        width: 105%;
+    }
+
+    main{
+        width: 105%;
+    }
+
+    .__container-selection-button{
+        width: 105%;
+    }
+
+    .__container-vignette-menu{
+        width: 105%;
+    }
+
+    footer{
+        width: 105%;
+    }
+}
+@media screen and (max-width:320px){
+    .container__header{
+        width: 123%;
+    }
+    header{
+
+        .__container-form{
+            width: 123%;
+        }
+    }
+
+    main{
+        width: 123%;
+    }
+
+    .__container-selection-button{
+        width: 123%;
+    }
+
+    .__container-vignette-menu{
+        width: 123%;
+    }
+
+    footer{
+        width: 123%;
+    }
+}
+
 // header
 @media screen and (max-width:767px) and (min-width:319px) {
 

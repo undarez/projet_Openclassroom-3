@@ -59,6 +59,8 @@ main {
     flex-direction: column;
     align-items: center;
 
+    
+
     .--title-2 {
         font-family: $police_texte;
         font-weight: 700;
@@ -95,6 +97,8 @@ main {
         transition: all 0.34s;
         padding-top: 10px;
 
+        
+
 
 
         a {
@@ -108,9 +112,10 @@ main {
             object-fit: cover;
         }
 
-        // taille de l'image 3 car photo en transversale donc trop grand par rapport aux autres.
-        .--taille-img-content-3 img {
-            height: 207px
+        // taille de l'image 2 car photo en transversale donc trop grand par rapport aux autres.
+       
+        .--taille-img-content-2 img{
+            height: 200px;
         }
 
         .--desc {
