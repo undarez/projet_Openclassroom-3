@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+  .main-content {
+    display: block;
+  }
+  .__container-selection-button .__container-button {
+    width: 30%;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-content {
+    width: 124%;
+  }
+  .__container-selection-button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .__container-selection-button .__container-button {
+    width: 50%;
+  }
+  .__container-vignette-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .__container-vignette-menu .__container-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=responsive_acceuil-index.css.map */
