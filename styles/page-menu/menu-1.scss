@@ -2,8 +2,9 @@
 @import 'utils/typographie';
 @import 'utils/styles';
 @import 'utils/headers';
+@import 'utils/buttons';
 @import 'utils/footers';
-@import 'utils/responsive-menu-1.scss';
+@import 'utils/responsive-menu-1';
 
 
 
@@ -22,7 +23,7 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     background: $color_background-grey;
@@ -83,60 +84,26 @@ main {
         z-index: 1;
     }
 
-    .--text-menu {
-        display: flex;
-        width: 97%;
-        justify-content: flex-start;
-        padding-top: 20px;
-
-        .--text {
-            font-family: $police_texte;
-            color: $color_grey-p;
-            font-weight: 400;
-            border-bottom: 3px solid #99e2d0;
-            width: 50px;
-
-        }
-    }
-
-    .--text-menu-2{
-        display:flex;
-        width: 74%;
-        justify-content: flex-start;
-        padding: 10px;
-        padding-left: 45px;
-
-        .--text {
-            font-family: $police_texte;
-            color: $color_grey-p;
-            font-weight: 400;
-            border-bottom: 3px solid #99e2d0;
-            width: 50px;
-
-        }
-    }
-
-    .--text-menu-3{
-        display:flex;
-        width: 89%;
-        justify-content: flex-start;
-        padding: 10px;
-        padding-left: 15px;
-
-        .--text {
-            font-family: $police_texte;
-            color: $color_grey-p;
-            font-weight: 400;
-            border-bottom: 3px solid #99e2d0;
-            width: 50px;
-
-        }
-    }
+    // .__responsive{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    // }
 
     .__menu-container {
-        width: 100%;
+        width: 98%;
         height: auto;
+        padding-left: 20px;
         background: $color_background-grey;
+
+        .--text-h3{
+            font-family: $police_texte;
+            color: $color_grey-p;
+            font-weight: 400;
+            border-bottom: 3px solid #99e2d0;
+            width: 50px;
+           
+        }
 
         // animation grid menu progessif
 
@@ -168,6 +135,7 @@ main {
 
         .__grid-menu {
             display: flex;
+            width:43%;
             flex-direction: column;
             height: auto;
             padding: 10px;
@@ -177,7 +145,7 @@ main {
 
             .--card-entree {
                 display: flex;
-                width: 296px;
+                width: 100%;
                 height: 59px;
                 max-height: 250px;
                 max-width: 375px;
@@ -216,6 +184,7 @@ main {
                     color: $color_black;
                     font-size: 16px;
                     width: 100%;
+                    text-align: center;
                 }
 
 // __container-check permet de réaliser la transition de droite vers la gauche grace au margin-right -40% ainsi que la transition.
@@ -226,6 +195,7 @@ main {
                     align-items: center;
                     margin-right: -40%;
                     transition: margin-right 0.5s ease-in-out;
+
                 }
 
 // --check est l'icon tous ce qui es stipuler sont les parametre de configuration ainsqi que le temps en ms du margin-right.
@@ -275,3 +245,4 @@ main {
 
 
 }
+

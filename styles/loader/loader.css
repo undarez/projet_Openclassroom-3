@@ -1,3 +1,11 @@
+@media screen and (max-width: 425px) {
+  .__oveerlay-loader {
+    align-items: center;
+  }
+  .__oveerlay-loader .--text {
+    font-size: 10px;
+  }
+}
 *,
 *::after,
 *::before {
@@ -24,7 +32,7 @@ body .main-content .__overlay-loader {
   1% {
     visibility: visible;
     z-index: 50;
-    width: 100%;
+    width: 120%;
     height: 100%;
     top: 0;
     bottom: 0;
@@ -63,7 +71,7 @@ body .main-content .__overlay-loader .__container-loader .__container-table-text
   background-clip: text;
   background-image: linear-gradient(45deg, #7F7FD5 0%, #86A8E7 50%, #91EAE4 100%);
   font-family: "Shrikhand", cursive;
-  font-size: 50px;
+  font-size: 40px;
 }
 @keyframes fade {
   0% {

@@ -1,5 +1,6 @@
 @import 'typographie';
 @import 'vars';
+@import 'responsive.scss';
 
 *,
 *::after,
@@ -30,7 +31,7 @@ body {
         1% {
           visibility: visible;
           z-index: 50;
-          width: 100%;
+          width: 120%;
           height: 100%;
           top: 0;
           bottom: 0;
@@ -78,7 +79,7 @@ body {
             background-clip: text;
             background-image: linear-gradient(45deg, #7F7FD5 0%, #86A8E7 50%, #91EAE4 100%);
             font-family: $police_logo-titre;
-            font-size: 50px;
+            font-size: 40px;
   
             // keyframe permet de realiser leffet d'opaciter de chargement
             
