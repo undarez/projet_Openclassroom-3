@@ -5,7 +5,6 @@
 @import'page-acceuil';
 @import'button';
 @import'footer';
-@import'utils/responsives';
 
 *,
 *::after,
@@ -24,7 +23,7 @@ body {
 }
 
 .main-content {
-    max-width: $taille_ecran;
+    min-width: 1400px;
     margin: $margin-main_content;
 }
 
