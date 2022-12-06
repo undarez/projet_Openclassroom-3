@@ -306,11 +306,9 @@ main .__container-main-p .--decouvrez {
 }
 .__container-vignette-menu .__container-card .--desc .heart .far {
   position: absolute;
-  z-index: -1;
   padding-right: -10px;
 }
 .__container-vignette-menu .__container-card .--desc .heart .far:hover {
-  opacity: 0;
   z-index: -1;
 }
 .__container-vignette-menu .__container-card .--desc .heart .fas:hover {

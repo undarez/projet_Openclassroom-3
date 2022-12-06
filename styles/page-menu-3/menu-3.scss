@@ -69,12 +69,12 @@ main {
 
     .__coeur .far {
         position: absolute;
-        z-index:-1;
+       
         padding-right: -10px;
     }
 
     .__coeur .far:hover {
-        opacity: 0;
+        
         z-index: -1;
     }
 
@@ -84,6 +84,21 @@ main {
         z-index: 1;
     }
 
+    .__menu-container {
+        width: 98%;
+        height: auto;
+        padding-left: 20px;
+        background: $color_background-grey;
+
+        .--text-h3{
+            font-family: $police_texte;
+            color: $color_grey-p;
+            font-weight: 400;
+            border-bottom: 3px solid #99e2d0;
+            width: 50px;
+           
+        }
+    }
     .--text-menu {
         display: flex;
         width: 97%;
