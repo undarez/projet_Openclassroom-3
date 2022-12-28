@@ -1,0 +1,21 @@
+
+@media screen and (min-width:100px){
+    body .main-content .overlay-loader .container-loader .container-table-text .text{
+        font-size: 25px !important;
+    }
+
+    body{
+        .main-content{
+            .overlay-loader{
+                .container-loader{
+                    .loader-placement{
+                        width: 100% !important;
+                        .cocotte{
+                            width: 40% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

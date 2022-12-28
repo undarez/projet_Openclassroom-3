@@ -21,7 +21,6 @@
                 .--card-entree{
                     .--prix{
                         margin-right: 11px;
-                        width: 31%;
                     }
                 }
             }
@@ -45,19 +44,7 @@
 
 // }
 
-@media screen and (min-width:425px){
-    main{
-        .__menu-container{
-            .__grid-menu{
-                .--card-entree{
-                    .--prix{
-                        margin-right: 25px;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 @media screen and (min-width:768px){
     main .__responsive{

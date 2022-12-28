@@ -15,6 +15,7 @@
     background-image: url(/sass/styles/images/palette-du-gout-1.jpg);
     background-size: cover;
     background-position: center;
+    object-fit: cover;
 
 
 }
@@ -84,12 +85,6 @@ main {
         z-index: 1;
     }
 
-    // .__responsive{
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: flex-start;
-    // }
-
     .__menu-container {
         width: 98%;
         height: auto;
@@ -135,7 +130,7 @@ main {
 
         .__grid-menu {
             display: flex;
-            width:43%;
+            width:74%;
             flex-direction: column;
             height: auto;
             padding: 10px;
@@ -190,7 +185,7 @@ main {
 // __container-check permet de réaliser la transition de droite vers la gauche grace au margin-right -40% ainsi que la transition.
                 .__container-check {
                     display: flex;
-                    width: 180px;
+                    width: 255px;
                     height: 59px;
                     align-items: center;
                     margin-right: -40%;

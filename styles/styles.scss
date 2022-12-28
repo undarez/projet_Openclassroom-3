@@ -16,14 +16,10 @@
 
 body {
     background: $color_background;
-    display: block;
-    position: relative;
-    
-
 }
 
 .main-content {
-    min-width: 1400px;
+    max-width: 1400px;
     margin: $margin-main_content;
 }
 

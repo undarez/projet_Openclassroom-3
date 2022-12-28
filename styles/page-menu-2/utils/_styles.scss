@@ -1,0 +1,16 @@
+*,*::after,*::before { margin :0; padding: 0; box-sizing: inherit;}
+
+body{
+    background: $color_background;
+    display: block;
+    position: relative;
+
+}
+
+.main-content{
+    max-width: $taille_ecran;
+    margin: $margin-main_content;
+}
+
+
+

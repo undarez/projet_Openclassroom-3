@@ -1,9 +1,12 @@
-@media screen and (max-width: 425px) {
-  .__oveerlay-loader {
-    align-items: center;
+@media screen and (min-width: 100px) {
+  body .main-content .__overlay-loader .__container-loader .__container-table-text .--text {
+    font-size: 25px !important;
   }
-  .__oveerlay-loader .--text {
-    font-size: 10px;
+  body .main-content .__overlay-loader .__container-loader .--loader-placement {
+    width: 100% !important;
+  }
+  body .main-content .__overlay-loader .__container-loader .--loader-placement .cocotte {
+    width: 40% !important;
   }
 }
 *,
@@ -17,16 +20,22 @@
 body {
   background: #dadada;
   position: relative;
-  height: 100%;
+  width: 100%;
 }
 body .main-content .__overlay-loader {
   position: absolute;
   z-index: -50;
-  width: 0;
-  height: 0;
+  width: 37%;
+  height: 100%;
   visibility: hidden;
   animation: loading 3s;
   animation-iteration-count: 1;
+  background: #00416A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFE000, #799F0C, #00416A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 @keyframes loading {
   1% {
@@ -56,15 +65,19 @@ body .main-content .__overlay-loader .__container-loader {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #99E2D0 0%, #9356DC 50%, #FF79DA 100%);
 }
 body .main-content .__overlay-loader .__container-loader .__container-table-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
+  width: 100%;
+  padding-top: 40px;
 }
 body .main-content .__overlay-loader .__container-loader .__container-table-text .--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   animation: fade 3000ms ease-in-out infinite;
   color: transparent;
   -webkit-background-clip: text;
@@ -88,6 +101,7 @@ body .main-content .__overlay-loader .__container-loader .--loader-placement {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100%;
 }
 body .main-content .__overlay-loader .__container-loader .--loader-placement .cocotte {

@@ -1,8 +1,14 @@
+// * { background: rgb(0 0 100/0.3) !important; }
+
+
+
 main {
     width: 100%;
     height: 100%;
     background: $color_white;
-    padding: 25px 0;
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
 
     .__container-main {
         display: flex;
@@ -35,16 +41,31 @@ main {
             font-weight: 400;
             font-size: 30px;
             color: $color_black;
-            width: 45%;
+            width: 100%;
         }
     }
 
+}
+
+.__container-fonctionne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px ;
+    width: 100%;
+    height: 100%;
+    background: white;
+    .--title-2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
 }
 
 .__container-grid-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     
 }

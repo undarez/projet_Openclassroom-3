@@ -1,0 +1,125 @@
+@media screen and (min-width: 100px) {
+  body .main-content .overlay-loader .container-loader .container-table-text .text {
+    font-size: 25px !important;
+  }
+  body .main-content .overlay-loader .container-loader .loader-placement {
+    width: 100% !important;
+  }
+  body .main-content .overlay-loader .container-loader .loader-placement .cocotte {
+    width: 40% !important;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #dadada;
+  position: relative;
+  width: 100%;
+}
+body .main-content .overlay-loader {
+  position: absolute;
+  z-index: -50;
+  width: 37%;
+  height: 100%;
+  visibility: hidden;
+  animation: loading 3s;
+  animation-iteration-count: 1;
+  background: #00416A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFE000, #799F0C, #00416A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@keyframes loading {
+  1% {
+    visibility: visible;
+    z-index: 50;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  99% {
+    visibility: visible;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+body .main-content .overlay-loader .container-loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+body .main-content .overlay-loader .container-loader .container-table-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 40px;
+}
+body .main-content .overlay-loader .container-loader .container-table-text .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  animation: fade 3000ms ease-in-out infinite;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(45deg, #7F7FD5 0%, #86A8E7 50%, #91EAE4 100%);
+  font-family: "Shrikhand", cursive;
+  font-size: 40px;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+body .main-content .overlay-loader .container-loader .loader-placement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+body .main-content .overlay-loader .container-loader .loader-placement .cocotte {
+  width: 800px;
+  height: auto;
+  animation: fade 3000ms ease-in-out infinite;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/*# sourceMappingURL=loader.css.map */

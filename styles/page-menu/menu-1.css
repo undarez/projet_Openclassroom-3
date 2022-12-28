@@ -142,88 +142,49 @@ footer .--sous-desc-4 {
   text-decoration: none;
 }
 
-@media screen and (min-width: 320px) {
-  .main-content {
-    width: 100%;
-  }
-  main .__coeur {
-    width: 10%;
-  }
-  main .__responsive {
-    width: 100%;
-  }
-  main .__menu-container {
-    width: 60%;
-  }
-  main .__menu-container .__grid-menu {
-    width: 129%;
-  }
-  main .__menu-container .__grid-menu .--card-entree .--prix {
-    margin-right: 11px;
-    width: 31%;
-  }
+@media screen and (min-width: 320px) and (max-width: 375px) {
   footer .--title {
-    padding-left: 25px;
+    font-size: 40px;
   }
-  footer .--sous-desc {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 425px) {
-  main .__menu-container .__grid-menu .--card-entree .--prix {
-    margin-right: 25px;
+  footer .taille {
+    font-size: 19px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   main .__responsive {
+    width: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  main .__responsive .__menu-container .__grid-menu .--card-entree .--prix {
-    margin-right: 49px;
-    width: 100%;
+  main .__responsive .__menu-container {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .__coeur {
+    width: 8%;
+    padding-right: 10px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1920px) {
   main .__responsive {
+    display: flex;
     flex-direction: row;
-    width: 58%;
+    width: 93%;
   }
   main .__responsive .__menu-container {
-    width: 54%;
+    width: 32%;
   }
   main .__responsive .__menu-container .__grid-menu {
-    width: 90%;
-  }
-  main .__responsive .__menu-container .__grid-menu .--card-entree .__typo {
-    width: 213px;
-  }
-  main .__responsive .__menu-container .__grid-menu .--card-entree .--prix {
-    margin-right: 31px;
-  }
-}
-@media screen and (min-width: 1439px) {
-  main .__menu-container {
-    width: 50%;
-  }
-  main .__menu-container .__grid-menu .--card-entree {
-    width: 89%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  main .__responsive {
-    flex-direction: row;
-    width: 100%;
-  }
-  main .__responsive .__menu-container {
-    width: 60%;
-  }
-  main .__responsive .__menu-container .__grid-menu {
-    width: 71%;
+    width: 95%;
   }
   main .__responsive .__menu-container .__grid-menu .--card-entree {
     width: 90%;
+  }
+  main .__coeur {
+    width: 8%;
+    padding-right: 10px;
   }
 }
 .__background-image {
@@ -232,6 +193,7 @@ footer .--sous-desc-4 {
   background-image: url(/sass/styles/images/palette-du-gout-1.jpg);
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 main {
@@ -325,7 +287,7 @@ main .__menu-container .__grid-menu {
 }
 main .__menu-container .__grid-menu {
   display: flex;
-  width: 43%;
+  width: 74%;
   flex-direction: column;
   height: auto;
   padding: 10px;
@@ -372,7 +334,7 @@ main .__menu-container .__grid-menu .--card-entree .--prix {
 }
 main .__menu-container .__grid-menu .--card-entree .__container-check {
   display: flex;
-  width: 180px;
+  width: 255px;
   height: 59px;
   align-items: center;
   margin-right: -40%;
