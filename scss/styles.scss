@@ -1,0 +1,24 @@
+@import'../utils/vars';
+@import'../utils/typographie';
+@import'../loader/loader.scss';
+@import'../scss/header';
+@import'../scss/page-acceuil';
+@import'../utils/button';
+@import'../scss/footer';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background: $color_background;
+}
+
+.main-content {
+    max-width: 1400px;
+    margin: $margin-main_content;
+}
