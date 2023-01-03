@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/scss/styles.css">
+    <link rel="stylesheet" href="/sass/scss/responsive_acceuil-index.css">
+
+    <!-- police roboto= texte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- police logo & titre = shrikand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Ohmyfood</title>
+</head>
+
+<body>
+
+    <div class="main-content">
+        <div class="overlay-loader">
+            <section class="container-loader">
+                <div class="container-table-text">
+                    <h2 class="text">Ohmyfood chargement</h2>
+                </div>
+                <div class="loader-placement">
+                    <a href="index.html">
+                        <img src="/sass/images/cocotte.jpg" class="cocotte" alt="">
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <header>
+            <div class="container__header">
+                <h1 class="title">
+                    Ohmyfood
+                </h1>
+            </div>
+            <div class="container-form">
+                <form>
+                    <i class=" localisation fa-solid fa-location-dot"></i><input type="text"
+                        placeholder="Paris, Belleville">
+                </form>
+            </div>
+        </header>
+        <!-- fin header -->
+
+        <!-- debut page-acceuil -->
+        <main>
+            <div class="container-main">
+                <h2 class="title-2">Réservez le menu qui <br> vous convient</h2>
+                <div class="container-main-p">
+                    <p class="decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins.
+                    </p>
+                </div>
+                <div class="container-button">
+                    <button type="button" class="restaurant">
+                        Explorer nos restaurants
+                    </button>
+                </div>
+            </div>
+        </main>
+        <!-- fin page acceuil -->
+
+        <!-- debut selection -->
+        <div class="container-fonctionne">
+            <h2 class="title-2">Fonctionnement</h2>
+        </div>
+
+        <div class="container-selection-button">
+            <div class="container-button">
+                <button type="button" class="restaurant">
+                    <span class="bulle">1</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Choisissez un restaurant
+                </button>
+            </div>
+
+            <div class="container-button">
+                <button type="button" class="restaurant">
+                    <span class="bulle">2</span>
+                    <i class="fa-solid fa-list-ul"></i>
+                    Composez votre menu
+                </button>
+            </div>
+
+            <div class="container-button">
+                <button type="button" class="restaurant">
+                    <span class="bulle">3</span>
+                    <i class="fa-solid fa-store"></i>
+                    Dégustez au restaurant
+                </button>
+            </div>
+        </div>
+
+        <section class="container-vignette-menu">
+            <h2 class="title-2 margin-title-2">Restaurants</h2>
+            <div class="container-grid-card">
+                <div class="container-card card-1">
+                    <div class="container-nouveau">
+                        <span class="vignette-new">Nouveau</span>
+                    </div>
+                    <a href="sass/html/pallette-du-gout.html">
+                        <div class="img-content">
+                            <img src="sass/images/palette-du-gout-1.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <div class="desc-container">
+                            <h2 class="title-2">La palette du goût</h2>
+                            <p class="decouvrez">Ménilmontant</p>
+                        </div>
+                        <div class="desc-icons">
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card card-2">
+                    <div class="container-nouveau">
+                        <span class="vignette-new">Nouveau</span>
+                    </div>
+                    <a href="sass/html/la_note_enchantee.html">
+                        <div class="img-content taille-img-content-2">
+                            <img src="sass/images/la-note-enchante-2.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <div class="desc-container">
+                            <h2 class="title-2">La note enchantée</h2>
+                            <p class="decouvrez">Charonne</p>
+                        </div>
+
+                        <div class="desc-icons">
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card card-3">
+                    <a href="sass/html/a-la-francaise.html">
+                        <div class="img-content taille-img-content-3">
+                            <img src="sass/images/a-la-francaise-3.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <div class="desc-container">
+                            <h2 class="title-2">À la française</h2>
+                            <p class="decouvrez">Cité Rouge</p>
+                        </div>
+                        <div class="desc-icons">
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card card-4">
+                    <a href="sass/html/le-delice-des-sens.html">
+                        <div class="img-content">
+                            <img src="sass/images/delice-des-sens-4.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <div class="desc-container">
+                            <h2 class="title-2">Le délice des sens</h2>
+                            <p class="decouvrez">Folie-Méricourt</p>
+                        </div>
+                        <div class="desc-icons">
+                            <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-footer">
+                <div class="desc">
+                    <h2 class="title">Ohmyfood</h2>
+                    <br>
+                    <i class="fa-solid fa-utensils"></i><span class="sous-desc">Proposer un restaurant</span>
+                    <br>
+                    <br>
+                    <span class="sous-desc-2">Devenir partenaire</span>
+                    <br>
+                    <i class="fa-solid fa-handshake"></i>
+                    <br>
+                    <span class="sous-desc-3">Mentions légales</span>
+                    <br>
+                    <br>
+                    <a href="mailto:test@test.com" class="sous-desc-4">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- fin main-content -->
+
+    <!-- appel font awasome  -->
+    <script src="https://kit.fontawesome.com/1eba15efc9.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
