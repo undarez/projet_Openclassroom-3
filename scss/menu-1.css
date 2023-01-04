@@ -1,0 +1,447 @@
+header {
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+}
+header .container-header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+header .container-header .titre-fleche {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+}
+header .container-header .titre-fleche a {
+  position: absolute;
+  left: 10px;
+}
+header .container-header .titre-fleche .fleche-retour {
+  color: #000;
+}
+
+.container-button {
+  position: relative;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-top: 1%;
+}
+.container-button .restaurant {
+  outline: none;
+  border: none;
+  color: #fff;
+  box-shadow: 1px 8px 5px 0px rgba(0, 0, 20, 0.55);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  align-items: center;
+  cursor: pointer;
+  width: 250px;
+  border-radius: 80px 80px 80px 80px;
+  background: linear-gradient(135deg, #FF79DA 0%, #1C6EA4 250%, #9356DC 100%);
+  transition: all 0.25s;
+}
+.container-button .restaurant:hover {
+  background: linear-gradient(135deg, #FF79DA 100%, #1C6EA4 250%, #9356DC 140%);
+  box-shadow: 1px 8px 27px 2px rgba(0, 0, 0, 0.45);
+  transition: all 0.36s;
+}
+.container-button .restaurant:active {
+  position: relative;
+  top: 8px;
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 20, 0.55);
+}
+
+.container-selection-button {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 25px 0;
+}
+.container-selection-button .title-2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.container-selection-button .container-button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4%;
+}
+.container-selection-button .container-button i {
+  color: #7e7e7e;
+  margin-right: 5px;
+}
+.container-selection-button .container-button .restaurant {
+  position: relative;
+  outline: none;
+  border: none;
+  color: #000;
+  box-shadow: 1px 8px 40px 0px rgba(0, 0, 20, 0.55);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+  width: 250px;
+  border-radius: 80px 80px 80px 80px;
+  background: #fff;
+  transition: all 0.35s;
+}
+.container-selection-button .container-button .restaurant:hover {
+  background: #F0E2F7;
+  box-shadow: 1px 8px 27px 2px rgba(0, 0, 0, 0.45);
+  transition: background-color 3s ease;
+}
+.container-selection-button .container-button .restaurant:active {
+  top: 8px;
+  background: linear-gradient(45deg, #F0E2F7 0%, #F5EDFF 50%, #F5EDFF 100%);
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 20, 0.55);
+}
+.container-selection-button .container-button .restaurant:active i {
+  color: #9356dc;
+}
+.container-selection-button .container-button .bulle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  background: #9356dc;
+  border-radius: 50%;
+  left: -5%;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #353535;
+}
+footer .title {
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+}
+footer .sous-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 20px;
+}
+footer .fa-utensils {
+  padding-left: 60px;
+  font-size: 25px;
+  color: #fff;
+}
+footer .fa-handshake {
+  padding-left: 65px;
+  font-size: 25px;
+  transform: rotate(-45deg);
+  margin-top: -5px;
+  color: #fff;
+}
+footer .sous-desc-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 100px;
+}
+footer .sous-desc-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 60px;
+}
+footer .sous-desc-4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 60px;
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 377px) {
+  footer .title {
+    font-size: 40px;
+  }
+  footer .taille {
+    font-size: 19px;
+  }
+  footer .sous-desc {
+    font-size: 18px;
+  }
+  footer .sous-desc-2 {
+    font-size: 18px;
+  }
+  footer .sous-desc-3 {
+    font-size: 18px;
+  }
+  footer .sous-desc-4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  main .responsive {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .responsive .menu-container {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .coeur {
+    width: 8%;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+  main .responsive {
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+  }
+  main .responsive .menu-container {
+    width: 32%;
+  }
+  main .responsive .menu-container .grid-menu {
+    width: 95%;
+  }
+  main .responsive .menu-container .grid-menu .card-entree {
+    width: 90%;
+  }
+  main .coeur {
+    width: 8%;
+    padding-right: 10px;
+  }
+}
+.background-image {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/palette-du-gout-1.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
+
+.background-image-2 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/la-note-enchante-2.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
+
+.background-image-3 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/a-la-francaise-3.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
+
+.background-image-4 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/delice-des-sens-4.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: #f7f7f7;
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+}
+main .header-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+main .title {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  width: 100%;
+}
+main .coeur {
+  position: relative;
+  width: 3%;
+  height: 100%;
+}
+main .coeur i {
+  position: absolute;
+  font-size: 22px;
+  margin-top: -10px;
+}
+main .coeur .fas {
+  cursor: pointer;
+  position: absolute;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC 0%, #FF79DA 53%, #9356DC 100%);
+  opacity: 0;
+  z-index: 0;
+  transition: 600ms;
+}
+main .coeur .far {
+  position: absolute;
+}
+main .coeur .far:hover {
+  z-index: -1;
+}
+main .coeur .fas:hover {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+main .menu-container {
+  width: 98%;
+  height: auto;
+  padding-left: 20px;
+  background: #f7f7f7;
+}
+main .menu-container .text-h3 {
+  font-family: "Roboto", sans-serif;
+  color: #7e7e7e;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 50px;
+}
+main .menu-container .grid-menu {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari et Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .menu-container .grid-menu {
+  display: flex;
+  width: 74%;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+  gap: 20px;
+}
+main .menu-container .grid-menu .card-entree {
+  display: flex;
+  width: 100%;
+  height: 59px;
+  max-height: 250px;
+  max-width: 375px;
+  background: #fff;
+  border-radius: 20px;
+  transition: all 0.36s;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .menu-container .grid-menu .card-entree .typo {
+  padding: 10px;
+  width: 275px;
+}
+main .menu-container .grid-menu .card-entree .overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .menu-container .grid-menu .card-entree .desc {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+main .menu-container .grid-menu .card-entree .text {
+  font-family: "Roboto", sans-serif;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+main .menu-container .grid-menu .card-entree .prix {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+main .menu-container .grid-menu .card-entree .container-check {
+  display: flex;
+  width: 255px;
+  height: 59px;
+  align-items: center;
+  margin-right: -40%;
+  transition: margin-right 0.5s ease-in-out;
+}
+main .menu-container .grid-menu .card-entree .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #f7f7f7;
+  background: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  transition: margin-right 500ms;
+}
+main .menu-container .card-entree:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 15px -3px rgba(0, 0, 0, 0.81);
+  transition: all 0.36s;
+}
+main .menu-container .card-entree:hover .container-check {
+  margin-right: 0;
+}
+main .menu-container .card-entree:hover .icon {
+  transform: rotate(360deg);
+  transition: transform 1300ms;
+}
+
+/*# sourceMappingURL=menu-1.css.map */

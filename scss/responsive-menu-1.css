@@ -1,0 +1,59 @@
+@media screen and (min-width: 320px) and (max-width: 377px) {
+  footer .title {
+    font-size: 40px;
+  }
+  footer .taille {
+    font-size: 19px;
+  }
+  footer .sous-desc {
+    font-size: 18px;
+  }
+  footer .sous-desc-2 {
+    font-size: 18px;
+  }
+  footer .sous-desc-3 {
+    font-size: 18px;
+  }
+  footer .sous-desc-4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  main .responsive {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .responsive .menu-container {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .coeur {
+    width: 8%;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+  main .responsive {
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+  }
+  main .responsive .menu-container {
+    width: 32%;
+  }
+  main .responsive .menu-container .grid-menu {
+    width: 95%;
+  }
+  main .responsive .menu-container .grid-menu .card-entree {
+    width: 90%;
+  }
+  main .coeur {
+    width: 8%;
+    padding-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=responsive-menu-1.css.map */
