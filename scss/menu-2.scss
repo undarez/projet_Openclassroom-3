@@ -1,61 +1,19 @@
 // delcaration des fichier que l'on a besoin
-
 @import'../utils/vars';
 @import'../utils/typographie';
-<<<<<<< HEAD
-@import'../scss/headers';
-@import'../utils/button';
-@import'../scss/footers';
-=======
-@import'../utils/header';
+@import'../scss/header';
 @import'../utils/button';
 @import'../scss/footer';
->>>>>>> d03f91ce689b448e561025b7a9e9b03c22baa58d
 @import '../scss/responsive-menu-1.scss';
 
-
 .background-image {
-    width: 100%;
-    height: 500px;
-    background-image: url(../images/palette-du-gout-1.jpg);
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-}
-.background-image-2 {
     width: 100%;
     height: 500px;
     background-image: url(../images/la-note-enchante-2.jpg);
     background-size: cover;
     background-position: center;
-    object-fit: contain;
+    object-fit: cover;
 }
-.background-image-3 {
-    width: 100%;
-    height: 500px;
-    background-image: url(../images/a-la-francaise-3.jpg);
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-}
-.background-image-4 {
-    width: 100%;
-    height: 500px;
-    background-image: url(../images/delice-des-sens-4.jpg);
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-}
-
-
-
-// .background-image-3 {
-//     width: 100%;
-//     height: 500px;
-//     background-image: url(../images/a-la-francaise-3.jpg);
-//     background-size: cover;
-//     background-position: center;
-// }
 
 main {
     width: 100%;
@@ -241,9 +199,7 @@ main {
                     height: 100%;
                     color: $color_background-grey;
                     background: $color_tertiare;
-                    // padding: 20px;
                     border-radius: 0 20px 20px 0;
-                    // margin-right: -2.1rem;
                     transition: margin-right 500ms;
                 }
 
